@@ -117,6 +117,10 @@ class Drawerbar extends StatelessWidget {
                 child: Center(child: Image.asset("assets/Logo.jpg"))),
             decoration: BoxDecoration(color: Colors.white),
           ),
+          Divider(
+            color: Colors.black,
+            height: 1,
+          ),
           ListTile(
               title: Text(
             "Home",

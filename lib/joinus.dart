@@ -29,7 +29,7 @@ class _JoinusState extends State<Joinus> {
         Container(
           child: Text(
             "Based on your interest you will be added to dedicated sub communities. So your authentic submission is expected.",
-            style: TextStyle(fontSize: 15, color: Colors.red),
+            style: TextStyle(fontSize: 15, color: Color(0xff004A69)),
             textAlign: TextAlign.center,
           ),
           padding: EdgeInsets.all(10),
@@ -50,6 +50,7 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12.0)),
                     borderSide: BorderSide(color: Color(0xff004A69), width: 2),
@@ -78,6 +79,7 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12.0)),
                     borderSide: BorderSide(color: Color(0xff004A69), width: 2),
@@ -106,6 +108,7 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12.0)),
                     borderSide: BorderSide(color: Color(0xff004A69), width: 2),
@@ -134,6 +137,7 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12.0)),
                     borderSide: BorderSide(color: Color(0xff004A69), width: 2),
