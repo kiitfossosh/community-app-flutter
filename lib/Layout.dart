@@ -128,7 +128,9 @@ class Drawerbar extends StatelessWidget {
               "Home",
               style: TextStyle(fontSize: 17),
             ),
-            onTap: () {},
+            onTap: () {
+              HomePage();
+            },
           ),
           ListTile(
             title: Text(
