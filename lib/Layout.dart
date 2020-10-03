@@ -67,7 +67,6 @@ class _LayoutState extends State<Layout> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.people,
-              size: 35,
             ),
             title: Text(
               'Developers',
@@ -77,7 +76,6 @@ class _LayoutState extends State<Layout> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
-              size: 35,
             ),
             title: Text(
               'Home',
@@ -87,7 +85,6 @@ class _LayoutState extends State<Layout> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.assignment,
-              size: 35,
             ),
             title: Text(
               'Join Us',
@@ -95,8 +92,13 @@ class _LayoutState extends State<Layout> {
             ),
           ),
         ],
-        selectedItemColor: Colors.amber[800],
-        unselectedItemColor: Colors.white,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white70,
+        unselectedIconTheme: IconThemeData(size: 35),
+        selectedIconTheme: IconThemeData(
+          size: 45,
+        ),
+        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
         onTap: _onItemTapped,
       ),
     );
@@ -122,31 +124,40 @@ class Drawerbar extends StatelessWidget {
             height: 1,
           ),
           ListTile(
-              title: Text(
-            "Home",
-            style: TextStyle(fontSize: 17),
-          )),
+            title: Text(
+              "Home",
+              style: TextStyle(fontSize: 17),
+            ),
+            onTap: () {},
+          ),
           ListTile(
-              title: Text(
-            "Open Source",
-            style: TextStyle(fontSize: 17),
-          )),
+            title: Text(
+              "Open Source",
+              style: TextStyle(fontSize: 17),
+            ),
+            onTap: () {},
+          ),
           ListTile(
             title: Text(
               "Projects",
               style: TextStyle(fontSize: 17),
             ),
+            onTap: () {},
           ),
           ListTile(
-              title: Text(
-            "Publications",
-            style: TextStyle(fontSize: 17),
-          )),
+            title: Text(
+              "Publications",
+              style: TextStyle(fontSize: 17),
+            ),
+            onTap: () {},
+          ),
           ListTile(
-              title: Text(
-            "Login",
-            style: TextStyle(fontSize: 17),
-          ))
+            title: Text(
+              "Login",
+              style: TextStyle(fontSize: 17),
+            ),
+            onTap: () {},
+          )
         ],
       ),
     );
