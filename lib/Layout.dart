@@ -12,7 +12,7 @@ class Layout extends StatefulWidget {
 class _LayoutState extends State<Layout> {
   int _currentIndex = 1;
   var _title = "HOME ";
-  var icn = Icons.home;
+  var icn = AssetImage("assets/icons/home solid tb.png");
   void _onItemTapped(int index) {
     setState(() {
       _currentIndex = index;
@@ -20,18 +20,18 @@ class _LayoutState extends State<Layout> {
     if (_currentIndex == 0) {
       setState(() {
         _title = "DEVELOPERS ";
-        icn = Icons.people;
+        icn = AssetImage("assets/icons/people solid tb.png");
       });
     }
     if (_currentIndex == 1) {
       setState(() {
         _title = "HOME ";
-        icn = Icons.home;
+        icn = AssetImage("assets/icons/home solid tb.png");
       });
     } else if (_currentIndex == 2) {
       setState(() {
         _title = "JOIN US ";
-        icn = Icons.assignment;
+        icn = AssetImage("assets/icons/join solid tb.png");
       });
     }
   }
@@ -51,9 +51,9 @@ class _LayoutState extends State<Layout> {
               _title,
               style: TextStyle(fontSize: 25),
             ),
-            Icon(
+            ImageIcon(
               icn,
-              size: 35,
+              size: 30,
             )
           ],
         ),
@@ -65,16 +65,16 @@ class _LayoutState extends State<Layout> {
         currentIndex: _currentIndex,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.people,
-            ),
+            icon: ImageIcon(AssetImage("assets/icons/people blank tb.png")),
+            activeIcon: Icon(Icons.people),
             title: Text(
               'Developers',
               style: TextStyle(fontSize: 20),
             ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(
+            icon: ImageIcon(AssetImage("assets/icons/home blank tb.png")),
+            activeIcon: Icon(
               Icons.home,
             ),
             title: Text(
@@ -83,9 +83,8 @@ class _LayoutState extends State<Layout> {
             ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.assignment,
-            ),
+            icon: ImageIcon(AssetImage("assets/icons/join blank tb.png")),
+            activeIcon: ImageIcon(AssetImage("assets/icons/join solid tb.png")),
             title: Text(
               'Join Us',
               style: TextStyle(fontSize: 20),

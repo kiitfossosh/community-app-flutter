@@ -35,13 +35,6 @@ class _JoinusState extends State<Joinus> {
           padding: EdgeInsets.all(10),
         ),
         Container(
-          padding: EdgeInsets.only(left: 20, top: 10),
-          child: Text(
-            "Email ID",
-            style: TextStyle(fontSize: 17.5),
-          ),
-        ),
-        Container(
             padding: EdgeInsets.only(left: 20, bottom: 15, right: 20, top: 5),
             child: TextField(
                 onChanged: (value) {
@@ -50,26 +43,23 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                    borderSide: BorderSide(color: Color(0xff004A69), width: 2),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    borderSide: BorderSide(color: Color(0xff004A69)),
-                  ),
-                  hintText: "Enter your Email ID",
-                ))),
-        Container(
-          padding: EdgeInsets.only(
-            left: 20,
-          ),
-          child: Text(
-            "Your Name",
-            style: TextStyle(fontSize: 17.5),
-          ),
-        ),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                      borderSide:
+                          BorderSide(color: Color(0xff004A69), width: 2),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      borderSide: BorderSide(color: Color(0xff004A69)),
+                    ),
+                    hintText: "Enter your Email ID",
+                    floatingLabelBehavior: FloatingLabelBehavior.always,
+                    labelText: "Your Email ID",
+                    labelStyle: TextStyle(
+                      fontSize: 22,
+                      color: Color(0xff004A69),
+                    )))),
         Container(
             padding: EdgeInsets.only(left: 20, bottom: 15, right: 20, top: 5),
             child: TextField(
@@ -89,16 +79,10 @@ class _JoinusState extends State<Joinus> {
                     borderSide: BorderSide(color: Color(0xff004A69)),
                   ),
                   hintText: "Enter your Name",
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  labelText: "Your Name",
+                  labelStyle: TextStyle(fontSize: 22, color: Color(0xff004A69)),
                 ))),
-        Container(
-          padding: EdgeInsets.only(
-            left: 20,
-          ),
-          child: Text(
-            "KIIT Roll No.",
-            style: TextStyle(fontSize: 17.5),
-          ),
-        ),
         Container(
             padding: EdgeInsets.only(left: 20, bottom: 15, right: 20, top: 5),
             child: TextField(
@@ -108,26 +92,23 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                    borderSide: BorderSide(color: Color(0xff004A69), width: 2),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    borderSide: BorderSide(color: Color(0xff004A69)),
-                  ),
-                  hintText: "Enter your KIIT Roll No.",
-                ))),
-        Container(
-          padding: EdgeInsets.only(
-            left: 20,
-          ),
-          child: Text(
-            "Branch",
-            style: TextStyle(fontSize: 17.5),
-          ),
-        ),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                      borderSide:
+                          BorderSide(color: Color(0xff004A69), width: 2),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      borderSide: BorderSide(color: Color(0xff004A69)),
+                    ),
+                    labelText: "KIIT Roll No.",
+                    floatingLabelBehavior: FloatingLabelBehavior.always,
+                    hintText: "Enter your KIIT Roll No.",
+                    labelStyle: TextStyle(
+                      fontSize: 22,
+                      color: Color(0xff004A69),
+                    )))),
         Container(
             padding: EdgeInsets.only(left: 20, right: 20, top: 5),
             child: TextField(
@@ -137,17 +118,23 @@ class _JoinusState extends State<Joinus> {
                 autocorrect: false,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                    borderSide: BorderSide(color: Color(0xff004A69), width: 2),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    borderSide: BorderSide(color: Color(0xff004A69)),
-                  ),
-                  hintText: "Enter your Branch",
-                ))),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                      borderSide:
+                          BorderSide(color: Color(0xff004A69), width: 2),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      borderSide: BorderSide(color: Color(0xff004A69)),
+                    ),
+                    hintText: "Enter your Branch",
+                    floatingLabelBehavior: FloatingLabelBehavior.always,
+                    labelText: "Branch",
+                    labelStyle: TextStyle(
+                      fontSize: 22,
+                      color: Color(0xff004A69),
+                    )))),
         Divider(
           height: 20,
         ),
@@ -166,7 +153,7 @@ class _JoinusState extends State<Joinus> {
                 CheckboxListTile(
                   title: const Text(
                     'AI/ML',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 17, color: Color(0xff004A69)),
                   ),
                   activeColor: Color(0xff004A69),
                   value: this.aiml,
@@ -179,7 +166,7 @@ class _JoinusState extends State<Joinus> {
                 CheckboxListTile(
                   title: const Text(
                     'Embedded Systems',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 17, color: Color(0xff004A69)),
                   ),
                   activeColor: Color(0xff004A69),
                   value: this.embedsys,
@@ -192,7 +179,7 @@ class _JoinusState extends State<Joinus> {
                 CheckboxListTile(
                   title: const Text(
                     'Web Development',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 17, color: Color(0xff004A69)),
                   ),
                   activeColor: Color(0xff004A69),
                   value: this.webdev,
@@ -205,7 +192,7 @@ class _JoinusState extends State<Joinus> {
                 CheckboxListTile(
                   title: const Text(
                     'App Development',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 17, color: Color(0xff004A69)),
                   ),
                   activeColor: Color(0xff004A69),
                   value: this.appdev,
@@ -218,7 +205,7 @@ class _JoinusState extends State<Joinus> {
                 CheckboxListTile(
                   title: const Text(
                     'UI/UX',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 17, color: Color(0xff004A69)),
                   ),
                   activeColor: Color(0xff004A69),
                   value: this.uiux,
