@@ -1,6 +1,16 @@
-# KIIT FOSS/OSH Community App
+# community_app
 
-A community app for the KIIT FOSS/OSH community  created by the student developers, for other student developers.
-Through this app, you can access the latest news about the world of open-source and remain an active member of the KIIT FOSS/OSH community on the go.
+A new Flutter project.
 
-Created using Google's cross-platform app-development framework Flutter, this app can be run on various platforms such as iOS, Android, Web and so on.
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
