@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
-                    fontSize: 30),
+                    fontSize: 35),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -72,12 +72,15 @@ Open source software is software withsource code that anyone can inspect, modify
                   ),
                   Container(child: Image.asset("assets/images/Image2.png"))
                 ])),
-            ClipPath(
-              clipper: WaveClipperTwo(reverse: false),
-              child: Container(
-                height: 60,
-                width: MediaQuery.of(context).size.width,
-                color: Colors.white,
+            Container(
+              color: Colors.white,
+              child: ClipPath(
+                clipper: WaveClipperTwo(reverse: true),
+                child: Container(
+                  height: 60,
+                  width: MediaQuery.of(context).size.width,
+                  color: Color(0xff004A69),
+                ),
               ),
             ),
             Container(
@@ -87,7 +90,7 @@ Open source software is software withsource code that anyone can inspect, modify
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
-                    fontSize: 30),
+                    fontSize: 35),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -101,13 +104,12 @@ Open source software is software withsource code that anyone can inspect, modify
                     height: 430,
                     child: Card(
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 25, vertical: 40),
+                        padding: EdgeInsets.only(left: 25, right: 25, top: 60),
                         child: Column(children: [
                           Divider(height: 30),
                           Image.asset("assets/images/app dev.png"),
                           Divider(
-                            height: 70,
+                            height: 130,
                           ),
                           FlatButton(
                             child: Text(
@@ -121,6 +123,7 @@ Open source software is software withsource code that anyone can inspect, modify
                                 borderRadius: new BorderRadius.circular(30.0)),
                             color: Colors.black,
                             minWidth: 250,
+                            height: 50,
                             onPressed: () {},
                           )
                         ]),
@@ -144,13 +147,12 @@ Open source software is software withsource code that anyone can inspect, modify
                     child: Card(
                       color: Color(0xff7C005A),
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 25, vertical: 40),
+                        padding: EdgeInsets.only(left: 25, right: 25, top: 60),
                         child: Column(children: [
                           Divider(height: 40),
                           Image.asset("assets/images/Embedded.png"),
                           Divider(
-                            height: 70,
+                            height: 120,
                           ),
                           FlatButton(
                             child: Text(
@@ -164,6 +166,7 @@ Open source software is software withsource code that anyone can inspect, modify
                                 borderRadius: new BorderRadius.circular(30.0)),
                             color: Colors.white,
                             minWidth: 250,
+                            height: 50,
                             onPressed: () {},
                           )
                         ]),
@@ -205,6 +208,7 @@ Open source software is software withsource code that anyone can inspect, modify
                                 borderRadius: new BorderRadius.circular(30.0)),
                             color: Color(0xff002B74),
                             minWidth: 250,
+                            height: 50,
                             onPressed: () {},
                           )
                         ]),
@@ -246,6 +250,7 @@ Open source software is software withsource code that anyone can inspect, modify
                                 borderRadius: new BorderRadius.circular(30.0)),
                             color: Color(0xffFFB300),
                             minWidth: 250,
+                            height: 50,
                             onPressed: () {},
                           )
                         ]),

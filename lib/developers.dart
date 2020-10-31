@@ -9,10 +9,13 @@ class _DevelopersState extends State<Developers> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 20, left: 10, right: 10),
+      padding: EdgeInsets.symmetric(horizontal: 10),
       child: ListView(
         shrinkWrap: true,
         children: [
+          Divider(
+            height: 13,
+          ),
           Text(
             "ANDROID DEVELOPERS",
             textAlign: TextAlign.center,
@@ -36,7 +39,8 @@ class _DevelopersState extends State<Developers> {
                     child: Container(
                       child: Card(
                         child: Container(
-                          padding: EdgeInsets.all(25),
+                          padding:
+                              EdgeInsets.only(left: 25, right: 25, top: 25),
                           child: Column(children: [
                             CircleAvatar(
                               backgroundColor: Colors.blueGrey,
@@ -102,7 +106,8 @@ class _DevelopersState extends State<Developers> {
                     child: Container(
                       child: Card(
                         child: Container(
-                          padding: EdgeInsets.all(25),
+                          padding:
+                              EdgeInsets.only(left: 25, right: 25, top: 25),
                           child: Column(children: [
                             CircleAvatar(
                               backgroundColor: Colors.blueGrey,

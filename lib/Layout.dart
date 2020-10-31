@@ -37,29 +37,37 @@ class _LayoutState extends State<Layout> {
   }
 
   final List<Widget> _children = [Developers(), HomePage(), Joinus()];
+  drawerhome() {
+    if (_currentIndex == 1) return Drawerbar();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff004A69),
-        title: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              _title,
-              style: TextStyle(fontSize: 25),
+          backgroundColor: Color(0xff004A69),
+          elevation: 10,
+          shadowColor: Colors.black,
+          centerTitle: true,
+          title: RichText(
+            text: TextSpan(
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              children: [
+                WidgetSpan(
+                  child: Container(
+                    padding: const EdgeInsets.only(left: 2.0, right: 3),
+                    child: ImageIcon(
+                      icn,
+                      size: 30,
+                    ),
+                  ),
+                ),
+                TextSpan(text: _title),
+              ],
             ),
-            ImageIcon(
-              icn,
-              size: 30,
-            )
-          ],
-        ),
-      ),
+          )),
       body: _children[_currentIndex],
-      drawer: Drawerbar(),
+      drawer: drawerhome(),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color(0xff004A69),
         currentIndex: _currentIndex,
@@ -69,7 +77,7 @@ class _LayoutState extends State<Layout> {
             activeIcon: Icon(Icons.people),
             title: Text(
               'Developers',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 17),
             ),
           ),
           BottomNavigationBarItem(
@@ -79,7 +87,7 @@ class _LayoutState extends State<Layout> {
             ),
             title: Text(
               'Home',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 17),
             ),
           ),
           BottomNavigationBarItem(
@@ -87,15 +95,15 @@ class _LayoutState extends State<Layout> {
             activeIcon: ImageIcon(AssetImage("assets/icons/join solid tb.png")),
             title: Text(
               'Join Us',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 17),
             ),
           ),
         ],
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
-        unselectedIconTheme: IconThemeData(size: 35),
+        unselectedIconTheme: IconThemeData(size: 28),
         selectedIconTheme: IconThemeData(
-          size: 45,
+          size: 35,
         ),
         selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
         onTap: _onItemTapped,
